@@ -1,7 +1,7 @@
 const videoElement = document.getElementById('video');
 const toggleCameraButton = document.getElementById('toggle-camera');
 const predictionElement = document.getElementById('predicted-sign');
-const socket = io.connect('http://localhost:5000');
+const socket = io.connect('https://jonanners.github.io/Sign-Language-Buddy/');
 
 let cameraOn = false;
 //const frameInterval = 200; // capture every 1s
