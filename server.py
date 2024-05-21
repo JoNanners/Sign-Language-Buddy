@@ -5,10 +5,11 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 import mediapipe as mp
+from flask_cors import CORS  # Import the CORS class
 
 app = Flask(__name__)
 socketio = SocketIO(app)
-
+CORS(app)
 # Load the trained model
 model = load_model('asl_lstm_model.h5')
 
