@@ -21,7 +21,7 @@ sequence_length = 20
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return app.send_static_file('index.html')
 
 @socketio.on('frame')
 def handle_frame(data):
