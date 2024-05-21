@@ -47,7 +47,7 @@ function captureFrame() {
   context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
   const dataURL = canvas.toDataURL('image/jpeg');
   socket.emit('frame', dataURL);
-  setTimeout(captureFrame,frameInterval);
+  //setTimeout(captureFrame,frameInterval);
   //requestAnimationFrame(captureFrame);
 }
 
